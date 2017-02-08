@@ -1,3 +1,5 @@
+/* general styles */
+
 body {
     font-size: 14px;
     line-height: 10px;
@@ -5,20 +7,442 @@ body {
     font-weight: 7px;
     font-family: "Arial", sans-serif;  
 }
-h1 {
-   font-size: 16px;
-    line-height: 10px;
-    color:black;
-    font-weight: 8px;
-    font-family: "Arial", sans-serif;  
+.wrapper {
+    width: 1280px;
+    margin-top: -7px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px dashed blue; 
 }
-h2 {
-   font-size: 14px;
-    line-height: 10px;
-    color:black;
-    font-weight: 8px;
-    font-family: "Arial", sans-serif;  
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
 }
-/* index */
+.main-header {
+    width: 1200px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    outline: 1px solid red;   
+}
+.menu-list {
+    width: 1060px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    outline: 1px dashed green;
+}
+.menu-list li {
+    display: inline-block;
+    list-style-type: none;
+}
+.menu-list li:nth-child(2) {
+    margin-left: 145px;
+}
+.menu-list li:nth-child(3) {
+    margin-left: 385px;
+}
+.menu-list li:nth-child(4) {
+    margin-left: 160px;
+}
+.emblem-of-city img {
+    position:absolute;
+    top: 0px;
+    margin-left: 530px;
+}
+.visitsedona {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 42px;
+    margin-left: 100px;
+    text-align: center;
+    outline: 1px dashed blue;
+}
+.social-btns {
+    float: left;
+    width: 170px;
+    height: 60px;
+    margin-top: 33px;
+    margin-left: 215px;
+    outline: 1px dashed blue;
+}
+.social-btns  .btn-vk {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 10px;
+    outline: 1px dashed blue;
+}
+ .social-btns .btn-facebook {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 5px;
+    outline: 1px dashed green;
+}
+.social-btns  .btn-youtube {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 5px;
+    outline: 1px dashed red;
+}
+.htmlacademy {
+    float: right;
+    width: 240px;
+    height: 60px; 
+    margin-top: 35px;
+    margin-right: 73px;
+    text-align: center;
+    outline: 1px dashed blue;
+}
 
-/* catalog */
+/* index page */
+
+.conatainer {
+    width:1200px;
+    margin-top: -90px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid blue;   
+}
+.background-image {
+    width: 1200px;
+    height: 510px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: bisque;   
+}
+.background-image .logo {
+    width: 455px;
+    margin-top: 74px;
+    margin-left: auto;
+    margin-right: auto 
+}
+.reasons-header {
+    width: 1200px;
+    height: 215px;
+    overflow: hidden;
+    background-color: azure;
+}
+.reasons-header .reasons-tittle {
+    width: 576px;
+    height: 45px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.reasons-header .reasons-description {
+    width: 576px;
+    height: 28px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.box {
+    float: left;
+    width: 400px;
+    height: 255px; 
+    text-align: center;
+       
+}
+.box .reason-tittle {
+    min-height: 50px;
+    margin-top: 50px;
+}
+.box .reason-number {
+    min-height: 25px;
+    margin-top: 20px;
+}
+.box .reason-description {
+    min-height: 40px;
+    margin-top: 20px;
+}
+.illustration-first {
+    float: right; 
+    width: 800px;
+    height: 255px;
+    overflow: hidden;
+    
+}
+.illustration-first img {
+    float: left;
+    margin-top: -75px;
+}
+.reasons-icons {
+    width: 1200px;
+    height: 330px;
+    margin-top: 256px;
+    text-align: center;
+}
+.reasons-icons .icon {
+    width: 400px;
+    height: 330px;
+}
+.reasons-icons .house {
+    float: left;
+}
+ .reasons-icons .food {
+    float: left;
+}
+.reasons-icons .gift {
+    float: right;
+}
+.illustration-second  {
+    float: left;
+    width: 800px;
+    height: 255px;
+    overflow: hidden;
+}
+.illustration-second img {
+    margin-top: -77px;
+}
+.reasons-row {
+    width: 1200px;
+    height: 257px;
+    margin-top: 257px;
+    background-color: aliceblue;
+}
+.reasons-row .column {
+    display: inline-block;
+    width: 400px;
+    height: 257px;
+    text-align: center;
+}
+.search-box {
+    width: 1200px;
+    height: 288px;
+    overflow: hidden;
+    outline: 1px dashed blue;
+}
+.search-box .search-box-tittle {
+    width: 400px;
+    height: 20px;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    text-align: center;   
+}
+.search-box .search-box-description{
+    width: 576px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    text-align: center;
+}
+.search-box .search-form-header {
+    width: 568px;
+    height: 46px;
+    margin-top: 63px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 40px;
+    text-align: center;
+    background-color: burlywood;
+}
+.map {
+    width: 1200px;
+    height: 594px;
+    background-color: beige;
+}
+.search-form {
+    width: 568px;
+    height: 395px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.search-form-box {
+    width: 490px;
+    height: 190px;
+    margin-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-button {
+    width: 460px;
+    height: 34px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    text-align: center;
+    background-color: deepskyblue;
+}
+.to {
+    text-align: center;
+}
+.from{
+    text-align: center;
+}
+.search-form-column {
+    text-align: center;
+}
+.footer-container {
+    width: 1200px;
+    height: 120px;
+    margin-top: 80px; 
+    overflow: hidden;
+    background-color: aliceblue;
+    opacity: 0.7;
+}
+
+/* catalog-page */
+
+.options {
+    width: 1200px;
+    height: 217px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.options .infrastracture {
+    float: left;
+    width: 250px;
+    height: 203px;
+   
+}
+.options .accommodation{
+    float: left;
+    width: 250px;
+    height: 203px;
+}
+.options .price-box {
+    float:right;
+    width: 420px;
+    height: 217px;
+    outline: 1px dashed red;
+}
+.filters {
+    width: 1200px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    outline: 1px solid blue;
+}
+.filters .found {
+    display: inline-block;
+    min-width: 118px;
+    margin-top: 33px;
+    margin-left: 73px;
+    padding-top: 10px;
+    text-align: center;
+}
+.filters .sorting {
+    display: inline-block;   
+}
+.filters .sorting .sorting-tittle {
+  display: inline-block;  
+}
+.filters .sorting a {
+    display: inline-block; 
+    margin-left: 10px;
+}
+.navigation-buttons {
+    display: inline-block;
+    margin-left: 565px;
+}
+.navigation-buttons div {
+    display: inline-block;
+}
+.variant-box {
+    width: 1200px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px dashed red;
+}
+.place-image {
+    float: left;
+    margin-top: 31px;
+    margin-left: 73px;
+}
+ .section-description { 
+     float:left;
+     width: 750px;
+     height: 110px;
+     margin-top: 20px;
+     margin-left: 20px;
+}
+.section-description .section-tittle {
+    float: left;
+    width: 700px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: left;
+}
+.section-description .place-description {
+    float: left;
+    width: 90px;
+    height: 15px;
+    margin-top: -8px;
+    margin-left: -5px;
+    text-align:center
+}
+.section-description .price-description {
+    float: left;
+    width: 110px;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+.section-description .section-buttons {
+    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: -200px;
+    float: left;
+}
+.section-buttons div {
+    display: inline-block;
+    padding: 10px;
+    outline: 1px solid brown;
+}
+.section-buttons div:last-child {
+    margin-left: 20px;
+}
+.stars {
+    float: right;
+    margin-top: 30px;
+    margin-right: 72px;
+}
+.stars .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid blue;
+}
+.rating {
+    float: left;
+    width: 90px;
+    height: 10px;
+    margin-top: 45px;
+    margin-left: 50px;
+    padding: 10px;
+    text-align: center;
+    outline: 1px dashed blue;
+    
+}
+.footer-box {
+    width: 1200px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: aliceblue; 
+}
