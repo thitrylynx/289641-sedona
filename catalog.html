@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link href="normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
       <div class="wrapper">
           <header class="main-header">
               <nav class="menu">
-                  <ul class="menu-list">
-                      <li class="menu-item"><a class="item-link" href="index.html">Информация</a></li>
-                      <li class="menu-item"><a class="item-link" href="#">Фото и видео</a></li>
-                      <li class="menu-item"><a class="item-link" href="#">Карта штата</a></li>
-                      <li class="menu-item"><a class="item-link active">Гостиницы</a></li>
+                  <ul class="menu-list clearfix">
+                      <li class="menu-item"><a class="item-link" href="index.html">Информация</a></li><!--
+                      --><li class="menu-item"><a class="item-link" href="#">Фото и видео</a></li><!--
+                       --><li class="menu-item"><a class="item-link" href="#">Карта штата</a></li><!--
+                       --><li class="menu-item"><a class="active">Гостиницы</a></li>
                   </ul>
                   <div class="emblem-of-city">
                       <a href="index.html"><img src="img/emblem-of-city.png" width="137" height="70" alt="Эмблема города Седона"></a>
@@ -22,6 +24,7 @@
           </header>
           <main>
               <div class="options clearfix">
+				  <form>
                   <fieldset class="infrastracture">
                           <legend class="article-tittle">Инфраструктура:</legend>
                           <input id="swimming-pool" type="checkbox" checked>
@@ -40,7 +43,8 @@
                           <input id="apartments" type="checkbox" checked>
                           <label for="apartments">Апартаменты</label>
                   </fieldset>
-                  <div class="price-box">
+				  </form>
+                  <form class="price-box">
                       <h2 class="price-box-tittle">Стоимость в сутки (Р):</h2>
                       <div class="price-controls">
                           от <input class="min-price" type="text" value="0">
@@ -56,7 +60,7 @@
                           </div>
                       </div>
                       <button class="submit" type="button">Показать</button>
-                  </div>
+                  </form>
               </div>
               <div class="filters">
                   <div class="found">Найдено: 3</div>
@@ -67,19 +71,19 @@
                       --><a class="rating-link" href="#">По рейтингу</a>
                   </div>
                   <div class="navigation-buttons">
-                      <div class="btn-up"><a class="up-link" href="#">1</a></div>
-                      <div class="btn-down"><a class="down-link active">1</a></div>
+					  <button class="btn-up" type="button">1</button>
+					  <button class="btn-down active" type="button">1</button>
                   </div>
-              </div>
+			  </div>
               <section class="variant-box clearfix">
                   <img class="place-image" src="img/small-image-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
                   <div class="section-description clearfix">
-                      <h2 class="section-tittle">Amara Resort &amp; Spa</h2>
+                      <h2><a class="section-tittle" href="#"> Amara Resort &amp; Spa</a></h2>
                       <div class="place-description">Гостиница</div>
                       <div class="price-description">от 3500 р.</div>
                       <div class="section-buttons">
-                          <div class="more"><a class="more-link" href="#">Подробнее</a></div><!--
-                          --><div class="book"><a class="book-link" href="#">Забронировать</a></div>
+						  <a class="more-link" href="#">Подробнее</a><!--
+                          --><a class="book-link" href="#">Забронировать</a>
                       </div>  
                   </div>
                   <div class="stars">
@@ -93,33 +97,33 @@
               <section class="variant-box clearfix">
                   <img class="place-image" src="img/small-image-2.jpg" width="135" height="90" alt="Desert Quail Inn">
                   <div class="section-description clearfix">
-                      <h2 class="section-tittle">Desert Quail Inn</h2>
+					  <h2><a class="section-tittle" href="#">Desert Quail Inn</a></h2>
                       <div class="place-description">Мотель</div>
                       <div class="price-description">от 2000 р.</div>
                       <div class="section-buttons">
-                          <div class="more"><a class="more-link" href="#">Подробнее</a></div><!--
-                          --><div class="book"><a class="book-link" href="#">Забронировать</a></div>
+                          <a class="more-link" href="#">Подробнее</a><!--
+                          --><a class="book-link" href="#">Забронировать</a>
                       </div>   
                   </div>
                   <div class="stars">
-                          <div class="star">*</div>
-                          <div class="star">*</div>
+					  <div class="star">*</div>
+					  <div class="star">*</div>
+					  <div class="star">*</div>
                   </div>
                   <div class="rating">Рейтинг: 8,9</div>
               </section>
               <section class="variant-box clearfix">
                   <img class="place-image" src="img/small-image-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                   <div class="section-description clearfix">
-                      <h2 class="section-tittle">Villas at Poco Diablo</h2>
+					  <h2><a class="section-tittle" href="#">Villas at Poco Diablo</a></h2>
                       <div class="place-description">Апартаменты</div>
                       <div class="price-description">от 4000 р.</div>
                       <div class="section-buttons">
-                          <div class="more"><a class="more-link" href="#">Подробнее</a></div><!--
-                          --><div class="book"><a class="book-link" href="#">Забронировать</a></div>
+                         <a class="more-link" href="#">Подробнее</a><!--
+                          --><a class="book-link" href="#">Забронировать</a>
                       </div>    
                   </div>
                   <div class="stars">
-                          <div class="star">*</div>
                           <div class="star">*</div>
                           <div class="star">*</div>
                   </div>
@@ -127,23 +131,13 @@
               </section>  
           </main>
           <footer class="footer-box">
-              <div class="visitsedona">
-                  <a class="visitsedon-link" href="#">#visitsedona</a>
-              </div>
+			  <a class="visitsedona" href="#">#visitsedona</a>
               <div class="social-btns">
-                  <div class="btn-vk">
-                      <a href="#">Вконтакте</a>
-                  </div><!--
-                  --><div class="btn-facebook">
-                  <a href="#">Facebook</a>
-                  </div><!--
-                  --><div class="btn-youtube">
-                  <a href="#">Youtube</a>
-                  </div>
+				  <a class="social-btn btn-t" href="#">Твиттер</a><!--
+                   --><a class="social-btn btn-facebook" href="#">Facebook</a><!--
+				   --><a class="social-btn btn-youtube" href="#">Youtube</a>
               </div>
-              <div class="htmlacademy">
-                  <a href="#">Htmlacademy</a>
-              </div>
+                  <a class="htmlacademy" href="#">Htmlacademy</a>
           </footer>
       </div>
     </body> 
