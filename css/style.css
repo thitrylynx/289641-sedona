@@ -1,6 +1,7 @@
 /* general styles */
 
 body {
+	
 	min-width: 1200px;s
 	font-weight: 7px;
     font-size: 14px;
@@ -10,6 +11,7 @@ body {
 	text-transform: uppercase;
 }
 .wrapper {
+	position: relative;
     width: 1280px;
     margin-top: -7px;
     margin-left: auto;
@@ -26,6 +28,7 @@ body {
     clear: both;
 }
 .main-header {
+	
     width: 1200px;
     height: 56px;
     margin-left: auto;
@@ -70,19 +73,23 @@ body {
 }
 .menu-list li:nth-child(1) {
     margin-left: 4px;
+	position:absolute;
 }
 .menu-list li:nth-child(2) {
-    margin-left: 148px;
+    margin-left: 244px;
+	position:absolute;
 }
 .menu-list li:nth-child(3) {
-    margin-left: 390px;
+    margin-left: 730px;
+	position:absolute;
 }
 .menu-list li:nth-child(4) {
-    margin-left: 163px;
+    margin-left: 982px;
+	position:absolute;
 }
 .emblem-of-city img {
     position:absolute;
-    top: 0px;
+    top: -1px;
     margin-left: 530px;
 }
 .visitsedona {
@@ -445,9 +452,9 @@ body {
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
-	
 	border: none;
 	background-color: #766357;
+	cursor: pointer;
 }
 .search-box .search-form-header:hover {
 	background-color: #604e43;
@@ -462,13 +469,45 @@ body {
 	overflow: hidden;
 	background: #f2f1ef url(../img/map.jpg) ;
 }
+.footer-container {
+    width: 1200px;
+    height: 120px;
+    margin-top: -120px; 
+	position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Modal-form */
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-350px);
+  }
+  70%  {
+    transform: translateY(10px);
+  }
+  90%  {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .search-form {
-	display: non;
+	width: 568px;
+    height: 395px;
 	position: absolute;
 	margin-left: 316px;
-    width: 568px;
-    height: 395px;
     background-color: #ffffff;
+	box-shadow: 
+		 0px 10px 50px -15px black;
+}
+.content-hidden {
+	display: none;
+}
+.content-show {
+	display: block;
+	animation: bounce 0.6s;
 }
 .search-form-box .to input:hover,
 .search-form-box .from input:hover,
@@ -494,10 +533,9 @@ body {
 }
 .search-form-box .to {
 	margin-top: 60px;
-	margin-left: 20px;	
+	margin-left: 20px;
 }
 .search-form-box .to input {
-	position: relative;
 	width: 330px;
 	height: 40px;
 	margin-left: 20px;
@@ -523,7 +561,6 @@ body {
     background-position: -41px 0px;
 	cursor: pointer;
 }
-
 .calendar:hover {
 	background-image: url(../img/sprite.png);
 	background-position: -82px 0px;
@@ -532,7 +569,6 @@ body {
 	background-image: url(../img/sprite.png);
 	background-position: 0px 0px;
 }
-
 .search-form-box .from {
 	margin-top: 20px;
 	margin-left: 20px;
@@ -550,7 +586,6 @@ body {
 	border: none;
 	box-sizing: border-box;
 }
-
 .search-form-column {
 	display: inline-block;
 	height: 60px;
@@ -647,12 +682,7 @@ body {
 .search-form-column {
     text-align: center;
 }
-.footer-container {
-    width: 1200px;
-    height: 120px;
-    margin-top: -120px; 
-    background-color: rgba(255, 255, 255, 0.9);
-}
+
 
 /* catalog-page */
 
