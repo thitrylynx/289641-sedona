@@ -420,6 +420,9 @@ li .item-link:active {
     height: 594px;
     background: #f2f1ef url(../img/map.jpg);
 }
+.map iframe {
+    border: 0;
+}
 .footer-container {
     position: absolute;
     min-height: 120px;
